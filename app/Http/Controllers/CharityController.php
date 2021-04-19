@@ -18,7 +18,8 @@ class CharityController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(){
+    public function index()
+    {
         $charities = User::where('role',2)->get();
         return view('admin')->withCharities($charities);
     }
@@ -27,7 +28,8 @@ class CharityController extends Controller
      * @param Request $request
      * @return mixed
      */
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -43,7 +45,8 @@ class CharityController extends Controller
      * @param $id
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function destroy($id){
+    public function destroy($id)
+    {
         $user = User::find($id);
         $user->delete();
         return redirect('/charities')->withSuccess('تم حذف الجمعية بنجاح');
@@ -54,7 +57,8 @@ class CharityController extends Controller
      * @param $id
      * @return mixed
      */
-    public function update(Request $request , $id){
+    public function update(Request $request , $id)
+    {
         $user = User::find($id);
         $user->name = $request->name;
         $user->frappe_user_id = $request->frappe_user_id;
