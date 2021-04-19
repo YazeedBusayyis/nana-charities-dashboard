@@ -8,7 +8,7 @@
                 @if(Auth::user()->frappe_user_id == "STR00001939")
                     <iframe
                             id="metabase"
-                            src="https://report.nana.sa/dashboard/256"
+                            src="https://report.nana.sa/public/dashboard/511b70a9-37d4-42bb-8335-87614610781e"
                             frameborder="0"
                             width="100%"
                             height="100%"
