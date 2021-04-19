@@ -5,14 +5,25 @@
     <div class="row">
         <div class="col-lg-12">
             <div style="padding-bottom: 40px;">
-                <iframe
-                        id="metabase"
-                        src="https://report.nana.sa/public/dashboard/899c5e83-c109-4d45-bdbd-c1fe0f17a550?charity_id={{ Auth::user()->frappe_user_id }}"
-                        frameborder="0"
-                        width="100%"
-                        height="100%"
-                        allowtransparency
-                ></iframe>
+                @if(Auth::user()->frappe_user_id == "STR00001939")
+                    <iframe
+                            id="metabase"
+                            src="https://report.nana.sa/dashboard/256"
+                            frameborder="0"
+                            width="100%"
+                            height="100%"
+                            allowtransparency
+                    ></iframe>
+                @else
+                    <iframe
+                            id="metabase"
+                            src="https://report.nana.sa/public/dashboard/899c5e83-c109-4d45-bdbd-c1fe0f17a550?charity_id={{ Auth::user()->frappe_user_id }}"
+                            frameborder="0"
+                            width="100%"
+                            height="100%"
+                            allowtransparency
+                    ></iframe>
+                @endif
             </div>
             {{--<div class="panel panel-default">--}}
                 {{--<div class="panel-heading">Dashboard</div>--}}
