@@ -40,8 +40,8 @@
                                             <div class="form-group">
                                                 <label>Has a special dashboard?</label>
                                                 <select class="form-control" id="exampleFormControlSelect1" name="special_dashboard">
-                                                    <option>Yes</option>
-                                                    <option>No</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="0">No</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
