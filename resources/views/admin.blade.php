@@ -37,6 +37,17 @@
                                                 <label>Frappe Charity ID</label>
                                                 <input type="text" name="frappe_user_id" class="form-control">
                                             </div>
+                                            <div class="form-group">
+                                                <label>Has a special dashboard?</label>
+                                                <select class="form-control" id="exampleFormControlSelect1" name="special_dashboard">
+                                                    <option>Yes</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Dashboard Link</label>
+                                                <input type="text" name="dashboard_link" class="form-control">
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">الغاء</button>
