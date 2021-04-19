@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12">
             <div style="padding-bottom: 40px;">
-                @if(Auth::user()->special_dashboard == "Yes")
+                @if(Auth::user()->special_dashboard == 1)
                     <iframe
                             id="metabase"
                             src="{{Auth::user()->dashboard_link}}"
