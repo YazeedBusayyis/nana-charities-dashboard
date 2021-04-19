@@ -5,10 +5,10 @@
     <div class="row">
         <div class="col-lg-12">
             <div style="padding-bottom: 40px;">
-                @if(Auth::user()->frappe_user_id == "STR00001939")
+                @if(Auth::user()->special_dashboard == "Yes")
                     <iframe
                             id="metabase"
-                            src="https://report.nana.sa/public/dashboard/511b70a9-37d4-42bb-8335-87614610781e"
+                            src="{{Auth::user()->dashboard_link}}"
                             frameborder="0"
                             width="100%"
                             height="100%"

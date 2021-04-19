@@ -33,6 +33,8 @@ class CharityController extends Controller
             'email' => $request->email,
             'password' => bcrypt($request->password),
             'frappe_user_id' => $request->frappe_user_id,
+            'special_dashboard'=> $request->special_dashboard,
+            'dashboard_link'=> $request->dashboard_link
         ]);
         return redirect('/charities')->withSuccess('تم إضافة الجمعية بنجاح');
     }
