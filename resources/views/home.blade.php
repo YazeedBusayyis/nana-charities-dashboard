@@ -14,6 +14,15 @@
                             height="100%"
                             allowtransparency
                     ></iframe>
+                @elseif(Auth::user()->frappe_user_id == "STR00002052")
+                <iframe
+                            id="metabase"
+                            src="https://report.nana.sa/public/dashboard/b4a2bf91-2f54-4156-9530-a6fc940b1336"
+                            frameborder="0"
+                            width="100%"
+                            height="100%"
+                            allowtransparency
+                    ></iframe>
                 @else
                     <iframe
                             id="metabase"
