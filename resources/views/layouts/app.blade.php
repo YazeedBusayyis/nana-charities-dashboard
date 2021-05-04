@@ -65,8 +65,8 @@
                 </div>
             </div>
         </nav>
-        <div>
-            <img src="/Nana_logo.png">
+        <div style="text-align: center; height: 80px;">
+            <img src="/Nana_logo.png" style="width: 150px;">
         </div>
         @yield('content')
     </div>
